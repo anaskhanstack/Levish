@@ -27,6 +27,16 @@ export default function Navbar() {
               Service
             </Link>
           </li>
+
+          <li className="nav-items">
+            <Link to="/" className="nav-links">
+              Products
+            </Link>
+          </li>
+
+          <li className="nav-items">
+            <button>Sign Up</button>
+          </li>
         </ul>
       </div>
     </div>
