@@ -1,10 +1,16 @@
-import './App.scss';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
+import "./App.scss";
 
 function App() {
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Navbar} />
+      </Switch>
+    </Router>
   );
 }
 
